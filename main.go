@@ -38,7 +38,7 @@ func main() {
 	logic.SEARCH_ENGINE = config.GetConfigString("go.config.search.engine")
 
 	fmt.Println("|-----------------------------------|")
-	fmt.Println("|          GoSearch 1.0.2           |")
+	fmt.Println("|            GImg 1.0.0             |")
 	fmt.Println("|-----------------------------------|")
 	fmt.Println("|  Go Http Server Start Successful  |")
 	fmt.Println("|    Port:" + config.GetConfigString("go.application.port") + "     Pid:" + fmt.Sprintf("%d", os.Getpid()) + "        |")
