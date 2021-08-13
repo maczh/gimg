@@ -10,7 +10,6 @@ import (
 	"os"
 	"os/signal"
 	"path/filepath"
-	"ququ.im/gosearch/logic"
 	"syscall"
 	"time"
 )
@@ -34,8 +33,6 @@ func main() {
 		Addr:    ":" + config.GetConfigString("go.application.port"),
 		Handler: engine,
 	}
-
-	logic.SEARCH_ENGINE = config.GetConfigString("go.config.search.engine")
 
 	fmt.Println("|-----------------------------------|")
 	fmt.Println("|            GImg 1.0.0             |")
